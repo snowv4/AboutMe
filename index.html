@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Victor Sant’Ana Ramos. Software, automação industrial e sensores vestíveis.">
+  <title>Victor Sant’Ana Ramos | Software &amp; Automação</title>
+  <script src="./preferences.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./locales.js"></script>
+  <script defer src="./app.js"></script>
+  <script defer src="./wave.js"></script>
+</head>
+<body>
+<a class="skip" href="#main" data-t="skip">Pular para o conteúdo</a>
+<header class="wrap top">
+  <a class="brand" href="#main" aria-label="Victor Sant’Ana Ramos"><span class="logo" aria-hidden="true">V<span>/</span></span> Victor Ramos</a>
+  <nav><a href="#projects" data-t="projects">Projetos</a><a href="#about" data-t="about">Sobre</a></nav>
+  <div class="tools">
+    <label class="language"><span class="globe" aria-hidden="true">◎</span><span id="lang-code" aria-hidden="true">PT</span><select id="lang" aria-label="Idioma"><option lang="pt-BR" value="pt">Português</option><option lang="en" value="en">English</option><option lang="es" value="es">Español</option><option lang="de" value="de">Deutsch</option></select></label>
+    <button id="theme" aria-label="Alternar tema" title="Alternar tema"><span class="theme-icon" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section class="hero">
+    <div class="intro"><p class="eyebrow"><i aria-hidden="true"></i><span data-t="discipline">Software &amp; automação</span></p>
+      <h1>Victor<br>Sant’Ana Ramos<span>.</span></h1>
+      <p class="lead" data-t="lead">Desenvolvo software para conectar sensores, visualizar movimentos e levar a automação ao chão de fábrica.</p>
+      <div class="links"><a class="primary" href="#projects" data-t="explore">Explorar projetos</a><a class="textlink" href="https://github.com/snowv4">GitHub</a></div>
+    </div>
+    <figure class="instrument">
+      <figcaption><span class="scope-mark" aria-hidden="true">∿</span><span data-t="instrument">Laboratório de sinais</span></figcaption>
+      <div class="screen"><canvas id="wave" aria-hidden="true"></canvas><span class="axis" aria-hidden="true">x / y / z</span></div>
+      <div class="controls"><label for="amplitude" data-t="amp">Amplitude</label><input type="range" min="0" max="100" value="72" id="amplitude"><output for="amplitude">72%</output></div>
+    </figure>
+  </section>
+  <section class="work" id="projects">
+    <div class="section-head"><h2 data-t="selected">Projetos selecionados</h2><span class="rule"></span></div>
+    <div class="cards">
+      <article><div class="art pcb" aria-hidden="true"><div class="board"><span>BNO086</span><b>IMU</b></div></div>
+        <div class="card-body"><p class="category" data-t="research">Pesquisa aplicada</p><h3 data-t="imu">Movimento em 3D</h3><p data-t="imuDesc">Sensores vestíveis e uma aplicação em Python para visualizar o movimento do tronco, braço e antebraço.</p>
+        <details><summary data-t="details">Ver detalhes</summary><p data-t="imuMore">No meu TCC em Engenharia Elétrica, uso sensores BNO086 ligados a placas ESP32. A aplicação recebe a orientação por Wi-Fi e permite explorar o movimento durante o Box and Block Test.</p><small>Python · ESP32 · BNO086</small></details></div></article>
+      <article><div class="art flow" aria-hidden="true"><div class="process"><b>IN</b><i></i><b>ƒ</b><i></i><b>OUT</b></div></div>
+        <div class="card-body"><p class="category" data-t="industry">Automação industrial</p><h3 data-t="inspection">Inspeções em campo</h3><p data-t="fieldDesc">Aplicativos móveis para registrar inspeções durante a ronda e sincronizar os dados quando a conexão retorna.</p>
+        <details><summary data-t="details">Ver detalhes</summary><p data-t="fieldMore">No estágio de automação, trabalhei na coleta offline, na prevenção de registros duplicados e no acompanhamento das inspeções com Power Apps e SharePoint.</p><small>Power Apps · SharePoint</small></details></div></article>
+      <article><div class="art rpg" aria-hidden="true"><div class="deck"><span></span><span></span><span>✧</span></div></div>
+        <div class="card-body"><p class="category" data-t="front">Desenvolvimento web</p><h3 data-t="notebook">Kote · Caderno de viagem</h3><p data-t="koteDesc">Ficha interativa de RPG com inventário, magias, rolagens de dados e salvamento local no navegador.</p>
+        <a class="repo" data-t="source" href="https://github.com/snowv4/KotinhoDH">Ver código no GitHub</a></div></article>
+    </div>
+  </section>
+  <section id="about" class="about"><div><p class="eyebrow"><i aria-hidden="true"></i><span data-t="about">Sobre</span></p><h2 data-t="background">Da engenharia ao software</h2></div>
+    <div><p data-t="bio">Estudo Engenharia Elétrica no Ifes, em Vitória, e atuo como estagiário de automação na ArcelorMittal Tubarão. Gosto de acompanhar o caminho inteiro de um dado, da leitura no sensor até a tela de quem precisa tomar uma decisão.</p><p data-t="bio2">Fora da indústria, crio ferramentas para jogos de mesa. Elas me dão espaço para experimentar interfaces e descobrir o que torna um aplicativo agradável de usar.</p><a class="textlink" href="https://github.com/snowv4?tab=repositories" data-t="repos">Meus repositórios no GitHub</a></div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>Victor Sant’Ana Ramos</strong><span data-t="credit">Projeto feito usando agentes e modelos de IA.</span></div></footer>
+</body></html>
