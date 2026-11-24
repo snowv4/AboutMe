@@ -15,7 +15,7 @@ function drawSignal() {
     const signal = .52 + .48 * Math.cos(8*x - 3.5*y + .25);
     return [
       width * (.5 + .31*x + .14*y),
-      height * (.64 + .13*x - .22*y - gain*1.07*envelope*signal)
+      height * (.64 + .13*x - .22*y - gain*.56*envelope*signal)
     ];
   }
   function path(points) {
