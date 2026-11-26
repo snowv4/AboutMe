@@ -8,3 +8,42 @@
 @media(max-width:840px){.wrap{width:min(91%,48rem)}.hero{grid-template-columns:1fr;gap:2rem}.intro{max-width:38rem}.screen{max-height:18rem}.cards{grid-template-columns:1fr}.cards article{display:grid;grid-template-columns:32% 1fr}.art{height:100%;min-height:11rem}.card-body h3+p{margin:.6rem 0 .8rem}.about{grid-template-columns:1fr;gap:1.2rem}}
 @media(max-width:580px){.top{gap:.5rem;flex-wrap:wrap;padding:.75rem 0 .6rem}.top nav{order:3;width:100%;gap:1.5rem;padding-top:.25rem}.top nav a{font-size:.92rem}.tools{padding-left:.7rem;gap:.4rem}.hero{padding:2.7rem 0}.eyebrow{margin-bottom:1rem}h1{font-size:clamp(3.15rem,11.9vw,4.4rem)}.cards article{display:block}.art{height:9.3rem;min-height:0}.work{padding:2rem 0}.about{padding:2.4rem 0}footer .wrap{align-items:flex-start;flex-direction:column;gap:.25rem}.lead{margin:1rem 0 1.5rem}.controls{gap:.75rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* The portrait leads into field notes, a research timeline and public code. */
+.profile {
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);
+  align-items:center;gap:clamp(2rem,7vw,7rem);padding:3.5rem 0;
+}
+.profile .lead {max-width:39rem;margin-bottom:.8rem}
+.role {max-width:34rem;color:var(--muted);margin-bottom:1.45rem}
+.portrait {width:100%;max-width:22rem;justify-self:center;border:1px solid var(--line);border-radius:10rem 10rem .75rem .75rem;overflow:hidden;background:var(--tint)}
+.portrait img {display:block;width:100%;height:auto;aspect-ratio:4 / 4.8;object-fit:cover;object-position:center 77%}
+.chapter {padding:3.2rem 0;border-top:1px solid var(--line)}
+.chapter .eyebrow {margin-bottom:.85rem}
+.chapter h2 {margin-bottom:1.5rem}
+.section-intro {max-width:46rem;color:var(--muted);font-size:1.13rem}
+.casegrid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.45rem 0}
+.entry {background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);padding:clamp(1.15rem,2.4vw,2rem);border-radius:0 0 8px 8px}
+.entry h3,.era h3,.learning h3,.lesson h3 {font-size:clamp(1.3rem,2vw,1.65rem);letter-spacing:-.035em;line-height:1.2;margin-bottom:.65rem}
+.entry p,.era p,.learning p,.lesson p {color:var(--muted);max-width:64ch}
+.entry details {margin-top:1rem}
+.entry details p {margin-top:.6rem}
+.entry small {display:block;margin-top:1rem;color:var(--accent);font:.8rem/1.5 var(--mono)}
+.entry a {display:inline-block;margin-top:.8rem}
+.lesson {padding:1.4rem 1.7rem;border-left:3px solid var(--accent);background:var(--tint)}
+.lesson p {max-width:81ch}
+.timeline {margin:1rem 0 1.35rem}
+.era {display:grid;grid-template-columns:minmax(6rem,18%) 1fr;gap:1.25rem;border-top:1px solid var(--line);padding:1.25rem 0}
+.era span {color:var(--accent);font:600 .91rem var(--mono);padding-top:.3rem}
+.era p {max-width:75ch}
+.learning {border-top:1px solid var(--line);padding-top:1.6rem;margin-top:1.6rem;display:grid;grid-template-columns:1fr 1fr;gap:1.3rem 2rem;align-items:start}
+.learning .instrument {grid-column:2;grid-row:1 / span 2;width:100%}
+@media(max-width:740px){
+  .profile {gap:1.25rem;padding:2.2rem 0;grid-template-columns:1fr}
+  .portrait {grid-row:1;width:7.5rem;justify-self:start;border-radius:50%}
+  .portrait img {aspect-ratio:1;object-position:center 76%}
+  .casegrid,.learning {grid-template-columns:1fr}
+  .learning .instrument {grid-column:auto;grid-row:auto}
+  .chapter {padding:2.3rem 0}
+  .era {grid-template-columns:1fr;gap:.45rem}
+}
